@@ -19,8 +19,10 @@
    </fieldset>
    </div>
    <div>
-   <label for=""></label>
-   <input type="text">
+   <label for="date">Date du rendez-vous : </label><br>
+   <input type="date" id="date" name="date" required> <br>
+   <label for="heure">Heure : </label>
+   <input type="time" name="heure" id="heure">
    </div>
    <div>
    <label for="numeroTel">N° de Téléphone : </label><br>
