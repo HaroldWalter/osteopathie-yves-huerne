@@ -32,6 +32,6 @@
    <label for="numeroSecu">N° de Sécurité Sociale : </label><br>
    <input type="number" id="numeroSecu" name="numeroSecu" size="15" required>
    </div>
-
+   <iframe src="https://us.cloudamo.com/index.php/apps/appointments/embed/O6%2B%2Bil3TjvYevRxivClmyH_nfIdUuu8ijwfgbw%3D%3D/form " style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </form>
 </main>
