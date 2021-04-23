@@ -7,6 +7,7 @@ define("ATTR_ITEM_MENU_ANCRE", "ancre");
 
 define("MENU_PRESENTATION", "presentation");
 define("NAV_VERS_PAGES", "navVersPages");
+define("NAV_VERS_ACCUEIL", "navVersAccueil");
 define("NAV_VERS_RDV", "navVersRDV");
 define("NAV_VERS_MENTIONS_LEGALES", "navVersMentionsLegales");
 
@@ -20,30 +21,29 @@ define("MENUS", [
             ATTR_ITEM_MENU_ANCRE => ANCRE_CABINET,
          ],
          [
-            ATTR_ITEM_MENU_LIBELLE => "Pourquoi consulter ?",
+            ATTR_ITEM_MENU_LIBELLE => "Pourquoi prendre RDV",
             ATTR_ITEM_MENU_PAGE => PAGE_ACCUEIL,
             ATTR_ITEM_MENU_ANCRE => ANCRE_POURQUOI_CONSULTER,
          ],
          [
-            ATTR_ITEM_MENU_LIBELLE => "Pour qui ?",
+            ATTR_ITEM_MENU_LIBELLE => "Pour qui prendre RDV",
             ATTR_ITEM_MENU_PAGE => PAGE_ACCUEIL,
             ATTR_ITEM_MENU_ANCRE => ANCRE_POUR_QUI,
          ],
          [
-            ATTR_ITEM_MENU_LIBELLE => "La consulation ?",
+            ATTR_ITEM_MENU_LIBELLE => "Contact",
             ATTR_ITEM_MENU_PAGE => PAGE_ACCUEIL,
-            ATTR_ITEM_MENU_ANCRE => ANCRE_CONSULTATIONS,
+            ATTR_ITEM_MENU_ANCRE => ANCRE_CONTACT,
          ],
-         [
-            ATTR_ITEM_MENU_LIBELLE => "Coordonnées ?",
-            ATTR_ITEM_MENU_PAGE => PAGE_ACCUEIL,
-            ATTR_ITEM_MENU_ANCRE => ANCRE_COORDONNEES,
-         ],
-
+         
       ],
    ],
 
    NAV_VERS_PAGES => [
+      NAV_VERS_ACCUEIL => [
+         ATTR_ITEM_MENU_LIBELLE => "Accueil",
+         ATTR_ITEM_MENU_PAGE => PAGE_ACCUEIL,
+      ],
 
       NAV_VERS_RDV => [
          ATTR_ITEM_MENU_LIBELLE => "Prise de RDV en Ligne",

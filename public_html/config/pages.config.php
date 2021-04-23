@@ -5,8 +5,8 @@ define("ATTR_PAGE_NOM_FICHIER", "nomFichier");
 define("ATTR_PAGE_TEMPLATE", "template");
 
 define("PAGE_ACCUEIL", "accueil");
-define("PAGE_PRISE_RDV", "priseRDV");
-define("PAGE_MENTIONS_LEGALES", "mentionsLegales");
+define("PAGE_PRISE_RDV", "prise-RDV");
+define("PAGE_MENTIONS_LEGALES", "mentions-legales");
 
 define("PAGES", [
    PAGE_ACCUEIL => [
