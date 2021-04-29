@@ -21,12 +21,12 @@ define("MENUS", [
             ATTR_ITEM_MENU_ANCRE => ANCRE_CABINET,
          ],
          [
-            ATTR_ITEM_MENU_LIBELLE => "Pourquoi prendre RDV",
+            ATTR_ITEM_MENU_LIBELLE => "Pourquoi <br> prendre RDV",
             ATTR_ITEM_MENU_PAGE => PAGE_ACCUEIL,
             ATTR_ITEM_MENU_ANCRE => ANCRE_POURQUOI_CONSULTER,
          ],
          [
-            ATTR_ITEM_MENU_LIBELLE => "Pour qui prendre RDV",
+            ATTR_ITEM_MENU_LIBELLE => "Pour qui prendre <br> RDV",
             ATTR_ITEM_MENU_PAGE => PAGE_ACCUEIL,
             ATTR_ITEM_MENU_ANCRE => ANCRE_POUR_QUI,
          ],

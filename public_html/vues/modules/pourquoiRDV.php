@@ -1,4 +1,63 @@
-<section id="<?=ANCRE_POURQUOI_CONSULTER ?>">
-   <h2>Pourquoi consulter ?</h2>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, iure impedit obcaecati ad aut dolores optio odio asperiores incidunt quisquam quis reiciendis ea mollitia fuga placeat ab facilis, minus, repudiandae laborum et labore maiores! Veniam in repudiandae quaerat commodi? Aspernatur iure, delectus sapiente laborum cumque expedita laboriosam praesentium incidunt. Tempore placeat facilis consequatur dicta sapiente tenetur nisi excepturi architecto provident deleniti illo accusantium vero commodi, hic molestiae, beatae perferendis voluptatem dolores ipsa alias. Tempore, velit modi. Possimus quia hic nemo! Error dolores sit vitae repellat ut, reiciendis fuga exercitationem numquam dolorum, repudiandae nesciunt magnam nulla debitis. Neque magni facere nihil odit vero, ab debitis reiciendis itaque a aliquid quae pariatur illum nostrum ipsum quaerat deleniti fugiat et corporis totam voluptate cumque repellat quibusdam necessitatibus tempore. Suscipit enim accusantium quas atque at repellendus neque voluptatem qui eligendi, ex fugit ab aut corporis adipisci odit inventore. Ipsa rerum exercitationem corporis similique dolores mollitia eius. Et neque atque repellendus nobis, perspiciatis minus possimus aspernatur alias corrupti cum quam, maxime ad quas quia! Possimus quibusdam assumenda minus nobis sunt adipisci vel exercitationem. Dolorem numquam doloremque molestias ducimus corrupti harum temporibus veritatis accusantium corporis iste quos modi adipisci, minus, ea dolor doloribus. Et dignissimos consequuntur labore voluptatibus pariatur aliquid, qui iure ab laudantium ipsam, recusandae doloribus aut dolorem officia ipsa. In unde, odio sit quis dolor officiis accusamus explicabo labore qui, reprehenderit maxime veniam delectus, nostrum mollitia veritatis nam laudantium commodi quos doloremque? Quidem nemo quam nam eius mollitia corrupti dignissimos. Cum dicta vero optio ratione fuga, sequi placeat sunt dolorem quae ullam adipisci voluptates veritatis, impedit accusamus perspiciatis quisquam eum deserunt quasi autem nesciunt blanditiis odio magnam! Debitis quis eaque, fugiat placeat ut maxime at vero aliquam nisi ducimus adipisci, pariatur aliquid molestiae exercitationem reprehenderit asperiores aperiam natus iusto minima provident, velit voluptate. Quisquam harum dolore sed at laudantium deleniti nihil nostrum provident perferendis dignissimos asperiores perspiciatis voluptates dicta odit sit debitis magni numquam animi laborum consectetur sint, cum vero natus? Adipisci perferendis recusandae dicta nisi architecto quibusdam at odio necessitatibus optio corrupti sequi aliquid, fuga obcaecati quidem ipsa iusto quaerat non! Atque perferendis molestias, explicabo autem hic expedita illum numquam officiis saepe dolorem qui reprehenderit perspiciatis. Voluptas nihil eligendi eum eaque commodi fuga, nisi veniam harum, quia, neque quam rerum! Fugit maiores ipsa esse quae delectus repellat, itaque culpa voluptatum aut molestias nobis corrupti quod qui vel veritatis rerum adipisci sapiente, omnis vero quis, voluptas ea. Quibusdam explicabo atque corporis eius praesentium quidem odit. Reiciendis impedit suscipit amet libero ad ipsum quis assumenda excepturi laboriosam cum consectetur, dignissimos neque quod facere iste mollitia atque nihil quos eaque voluptas, corporis, molestiae unde. Repellendus assumenda, atque delectus natus harum perspiciatis inventore ab labore quam consectetur quae aperiam alias et eveniet debitis molestias, aliquam architecto vero, velit recusandae itaque quidem vitae eligendi! Dolores dicta soluta quas minima explicabo iste delectus? Facilis a, consectetur doloremque voluptatibus nihil praesentium blanditiis minima obcaecati nam sunt modi tenetur quos recusandae mollitia asperiores magni veritatis officiis, eaque, dolor alias! Reiciendis, ea!</p>
+<section id="<?= ANCRE_POURQUOI_CONSULTER ?>">
+   <h2>Pourquoi prendre <br> RDV</h2>
+   <figure><img class="image-fond" src="./images/logo_seul.svg" alt=""></figure>
+
+   <div class="row">
+      <div class="col-md-4">
+      <article>
+         <h3>
+            Système <br> musculo-squelettique :
+         </h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+         <figure><img src="<?= CHEMIN_IMAGES ?>musculo_squelettique.svg" alt=""></figure>
+      </article>
+      <article>
+         <h3>
+            Système <br> génito-urinaire :
+         </h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+         <figure><img src="<?= CHEMIN_IMAGES ?>reins.svg" alt="reins"></figure>
+      </article>
+      </div>
+
+      <div class="col-md-4">
+      <article>
+         <h3>
+            Système nerveux :
+         </h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+         <figure><img src="<?= CHEMIN_IMAGES ?>cerveau.svg" alt="cerveau"></figure>
+      </article>
+      <article>
+         <h3>
+            Système <br> Oto-thino-laryngologique <br> (ORL) :
+         </h3>
+
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+         <figure><img src="<?= CHEMIN_IMAGES ?>orl.svg" alt="orl"></figure>
+      </article>
+      </div>
+
+      <div class="col-md-4">
+      <article>
+         <h3>
+            Système digestif :
+         </h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
+         <figure><img src="<?= CHEMIN_IMAGES ?>estomac.svg" alt="estomac"></figure>
+      </article>      
+      
+      <article>
+         <h3>
+            Système <br> Oto-thino-laryngologique <br> (ORL) :
+         </h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+
+         <figure><img src="<?= CHEMIN_IMAGES ?>coeur.svg" alt="coeur"></figure>
+      </article>
+      </div>
+   </div>
 </section>

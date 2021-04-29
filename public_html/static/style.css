@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 html {
 	font-size: 80%;
 }
@@ -7,7 +9,168 @@ body {
 	margin: 0;
 }
 
-nav ul{
-   flex-direction: row;
+/* ----------------------Taille des sections de la page -------------- */
 
+header,
+footer {
+	max-width: 1920px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+header > div,
+header nav {
+	height: 100%;
+}
+
+main {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+section {
+	max-width: 1920px;
+	min-height: 1080px;
+	margin: 0 auto;
+}
+
+h2 {
+	color: #3d64ad;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 45pt;
+	margin: 20px auto;
+	text-align: center
+	;
+}
+/* ------------------------ Header------------------------------ */
+header {
+	height: 100px;
+	margin: 0 5px;
+}
+
+.navbar div {
+	text-align: center;
+	height: 100%;
+}
+
+.navbar-brand img {
+	object-fit: contain;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.nav-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-item,
+.nav-item button {
+	font-weight: bold;
+	font-size: 20pt;
+	text-transform: uppercase;
+	color: #3d64ad;
+	line-height: 1em;
+}
+
+button {
+	border-color: #3d64ad;
+	border-radius: 20px;
+	padding: 10px;
+}
+button a {
+	text-decoration: none;
+}
+
+/* ==========================SECTION CABINET================ */
+#cabinet{
+	position: relative;
+	height: 1080px;
+}
+
+#cabinet h2 {
+	position: absolute;
+	top: 16px;
+	left: 40%;
+}
+
+#cabinet article {
+	position: absolute;
+	top: 500px;
+}
+#cabinet article p {
+	text-shadow: 0px 0px 10px white;
+}
+/* -------------------Caroussel------------ */
+.carousel-item {
+	height: 1080px;
+}
+.carousel-item img {
+	object-fit:cover;
+	height: 100%;
+	width: 100%;
+}
+
+/* =======================Section Pourquoi Prendre Rendez-vous============= */
+#pourquoi-consulter {
+	position: relative;
+}
+
+#pourquoi-consulter .image-fond {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	height: 100%;
+	opacity: 0.2;
+}
+
+#pourquoi-consulter article {
+	background-color: rgba(61, 100, 173, 0.2);
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	height: 450px;
+	width: 450px;
+	padding: 40px;
+
+	text-align: center;
+	
+	
+}
+
+#pourquoi-consulter article h3 {
+	font-size: 18pt;
+	color: #f28d32;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+#pourquoi-consulter article p {
+	font-size: 12pt;
+	color: black;
+	word-wrap:normal;
+} 
+
+#pourquoi-consulter figure {
+	height: 150px;
+	width: 150px;	
+	margin: 0 auto;
+}
+
+#pourquoi-consulter figure img {
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+	
+}
+
+/* ========================footer=========================== */
+footer {
+	background-color: #cdcdce;
 }
