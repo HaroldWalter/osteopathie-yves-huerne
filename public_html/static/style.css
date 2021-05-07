@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 html {
 	font-size: 80%;
@@ -37,11 +37,10 @@ section {
 h2 {
 	color: #3d64ad;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 45pt;
 	margin: 20px auto;
-	text-align: center
-	;
+	text-align: center;
 }
 /* ------------------------ Header------------------------------ */
 header {
@@ -85,7 +84,7 @@ button a {
 }
 
 /* ==========================SECTION CABINET================ */
-#cabinet{
+#cabinet {
 	position: relative;
 	height: 1080px;
 }
@@ -94,23 +93,31 @@ button a {
 	position: absolute;
 	top: 16px;
 	left: 40%;
+	z-index: 2;
 }
+
 
 #cabinet article {
 	position: absolute;
-	top: 500px;
+	top: 35%;
+	
 }
 #cabinet article p {
-	text-shadow: 0px 0px 10px white;
+	color: black;
+	text-shadow: -3px -3px 8px rgba(255, 255, 255, 2), 3px 3px 8px rgba(255, 255, 255, 2);
+	margin: auto 384px;
+	
+
 }
 /* -------------------Caroussel------------ */
+
 .carousel-item {
 	height: 1080px;
 }
 .carousel-item img {
-	object-fit:cover;
-	height: 100%;
-	width: 100%;
+	object-fit: cover;
+	height: 100vh;
+	width: auto;
 }
 
 /* =======================Section Pourquoi Prendre Rendez-vous============= */
@@ -140,8 +147,6 @@ button a {
 	padding: 40px;
 
 	text-align: center;
-	
-	
 }
 
 #pourquoi-consulter article h3 {
@@ -154,12 +159,12 @@ button a {
 #pourquoi-consulter article p {
 	font-size: 12pt;
 	color: black;
-	word-wrap:normal;
-} 
+	word-wrap: normal;
+}
 
 #pourquoi-consulter figure {
 	height: 150px;
-	width: 150px;	
+	width: 150px;
 	margin: 0 auto;
 }
 
@@ -167,7 +172,6 @@ button a {
 	object-fit: contain;
 	height: 100%;
 	width: 100%;
-	
 }
 
 /* ========================footer=========================== */

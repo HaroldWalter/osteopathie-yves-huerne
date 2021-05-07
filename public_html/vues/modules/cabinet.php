@@ -13,7 +13,7 @@
             <img src="<?= CHEMIN_IMAGES ?>salle_dattente.svg" class="d-block w-100" style="height=1080px;" alt="Salle d'attente">
          </div>
          <div class="carousel-item">
-            <img src="<?= CHEMIN_IMAGES ?>cabinet.svg" class="d-block w-100" style="height=1080px;" alt="Cabinet">
+            <img src="<?= CHEMIN_IMAGES ?>cabinet.svg" class="d-block w-100" alt="Cabinet">
          </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabinet" data-bs-slide="prev">
@@ -27,8 +27,11 @@
    </div>
 
 
+   
+  
    <h2>Le cabinet </h2>
-   <article>
+    <article>
+  
    <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita eum! Culpa hic accusantium consequuntur velit facere similique obcaecati laudantium ipsum laboriosam recusandae nesciunt assumenda aspernatur numquam dolor iure labore unde voluptatibus, beatae eum omnis. Praesentium accusantium explicabo, enim consequatur id soluta perferendis magni. Quia unde esse cum asperiores sapiente obcaecati est numquam dolores eligendi error repellendus optio illo dolorum libero beatae nam sed reiciendis, debitis in! Minus, ab corporis.
    </p>
@@ -36,4 +39,5 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga in, libero quibusdam, accusantium ratione nihil sapiente velit ullam optio dolor et voluptas provident tenetur autem ab odio nam debitis, non aut beatae! Odit ipsam repudiandae eius quos aspernatur error nobis ratione quas, nemo sed obcaecati provident recusandae asperiores ad sunt adipisci, quis qui atque vero dolorem, deserunt pariatur. Voluptatem aut beatae vel pariatur esse, facere autem facilis voluptatibus deserunt.
    </p>
    </article>
+   
 </section>
