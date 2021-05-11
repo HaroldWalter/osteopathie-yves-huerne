@@ -30,23 +30,36 @@ main {
 
 section {
 	max-width: 1920px;
-	min-height: 1080px;
 	margin: 0 auto;
 }
 
 h2 {
 	color: #3d64ad;
 	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 45pt;
+	font-weight: bolder;
+	font-size: 3.5rem;
 	margin: 20px auto;
 	text-align: center;
 }
-/* ------------------------ Header------------------------------ */
-header {
-	height: 100px;
-	margin: 0 5px;
+
+.titrePetitEcran {
+	display: none;
 }
+
+.titreGrandEcran {
+	display: block;
+}
+
+@media screen and (max-width: 1140px) {
+	.titrePetitEcran {
+		display: block;
+	}
+
+	.titreGrandEcran {
+		display: none;
+	}
+}
+/* ------------------------ Header------------------------------ */
 
 .navbar div {
 	text-align: center;
@@ -68,7 +81,7 @@ header {
 .nav-item,
 .nav-item button {
 	font-weight: bold;
-	font-size: 20pt;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	color: #3d64ad;
 	line-height: 1em;
@@ -76,8 +89,9 @@ header {
 
 button {
 	border-color: #3d64ad;
-	border-radius: 20px;
-	padding: 10px;
+	border-radius: 12px;
+	padding: 15px;
+	background-color: white;
 }
 button a {
 	text-decoration: none;
@@ -86,38 +100,40 @@ button a {
 /* ==========================SECTION CABINET================ */
 #cabinet {
 	position: relative;
-	height: 1080px;
+	height: 100vh;
+	max-height: 1080px;
 }
 
-#cabinet h2 {
+#cabinet .voile {
+	/* Sert à mettre un plan gris d'opacité de 20% par dessus le carrousel pour rendre le text plus lisible */
 	position: absolute;
-	top: 16px;
-	left: 40%;
-	z-index: 2;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	max-height: 1080px;
+	background-color: rgba(128, 128, 128, 0.4);
 }
-
 
 #cabinet article {
 	position: absolute;
-	top: 35%;
-	
+	top: 50%;
+	transform: translateY(-50%);
+	margin: auto 20%;
 }
 #cabinet article p {
 	color: black;
-	text-shadow: -3px -3px 8px rgba(255, 255, 255, 2), 3px 3px 8px rgba(255, 255, 255, 2);
-	margin: auto 384px;
-	
-
+	text-shadow: -3px -3px 8px white, 3px 3px 8px white;
 }
 /* -------------------Caroussel------------ */
-
-.carousel-item {
-	height: 1080px;
+.carousel {
+	height: 100vh;
+	max-height: 1080px;
 }
+
 .carousel-item img {
 	object-fit: cover;
 	height: 100vh;
-	width: auto;
+	max-height: 1080px;
 }
 
 /* =======================Section Pourquoi Prendre Rendez-vous============= */
@@ -128,10 +144,16 @@ button a {
 #pourquoi-consulter .image-fond {
 	position: absolute;
 	top: 0;
-	right: 0;
+	left: 50%;
+	transform: translateX(-50%);
 
 	height: 100%;
 	opacity: 0.2;
+}
+
+.colonne-conteneur {
+	position: relative;
+	height: 1080px;
 }
 
 #pourquoi-consulter article {
@@ -142,22 +164,20 @@ button a {
 	justify-content: space-evenly;
 	align-items: center;
 
-	height: 450px;
-	width: 450px;
-	padding: 40px;
-
 	text-align: center;
 }
 
 #pourquoi-consulter article h3 {
-	font-size: 18pt;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
 	color: #f28d32;
 	font-weight: bold;
-	text-transform: capitalize;
+	text-transform: uppercase;
+	margin: 1.5rem;
 }
 
 #pourquoi-consulter article p {
-	font-size: 12pt;
+	font-size: 1rem;
 	color: black;
 	word-wrap: normal;
 }
@@ -172,6 +192,111 @@ button a {
 	object-fit: contain;
 	height: 100%;
 	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#digestif figure {
+	height: 200px;
+	max-width: 200px;
+}
+
+#musculaire,
+#nerveux {
+	height: 450px;
+	width: 100%;
+	max-width: 450px;
+	padding: 35px;
+}
+
+#genito {
+	height: 510px;
+	width: 100%;
+	max-width: 531px;
+	padding: 35px;
+}
+
+#orl {
+	height: 380px;
+	width: 380px;
+	padding: 10px;
+}
+
+#digestif {
+	height: 550px;
+	width: 100%;
+	max-width: 550px;
+	padding: 30px;
+}
+
+#vasculaire {
+	height: 450px;
+	width: 100%;
+	max-width: 450px;
+	padding: 20px;
+}
+@media screen and (min-width: 1140px) {
+	.colonne-conteneur {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+@media screen and (max-width: 1141px) {
+	#musculaire {
+		position: absolute;
+		top: 3%;
+		left: 5px;
+	}
+	#nerveux {
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	#genito {
+		position: absolute;
+		bottom: 2px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	#orl {
+		position: absolute;
+		bottom: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	#digestif {
+		position: absolute;
+		top: 3%;
+		right: 5px;
+	}
+
+	#vasculaire {
+		position: absolute;
+		bottom: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+/* -------------Boutton de retour en haut de page------------------- */
+#pourquoiTopBttn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	z-index: 99;
+	border: none;
+	padding: 0;
+}
+
+#pourquoiTopBttn img {
+	width: 35px;
+	height: auto;
 }
 
 /* ========================footer=========================== */
