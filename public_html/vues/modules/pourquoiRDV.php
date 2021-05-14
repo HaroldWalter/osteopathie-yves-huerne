@@ -64,5 +64,5 @@
          </article>
       </div>
    </div>
-   <button onclick="topFonction()" id="pourquoiTopBttn" title="Retour en haut de la page"><img src="<?= CHEMIN_IMAGES ?>fleche_haut.svg" alt="Flèche vers haut de la page"></button>
+   <button onclick="topFonction()" id="pourquoiTopBttn" title="Retour en haut de la page"class='topBttn'><img src="<?= CHEMIN_IMAGES ?>fleche_haut.svg" alt="Flèche vers haut de la page"></button>
 </section>

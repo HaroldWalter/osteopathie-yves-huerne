@@ -37,7 +37,7 @@ h2 {
 	color: #3d64ad;
 	text-transform: uppercase;
 	font-weight: bolder;
-	font-size: 3.5rem;
+	font-size: 4rem;
 	margin: 20px auto;
 	text-align: center;
 }
@@ -59,6 +59,21 @@ h2 {
 		display: none;
 	}
 }
+
+/* Bouton de prise de rendez-vous */
+.bttnRDV {
+	font-weight: bold;
+	border-color: #3d64ad;
+	border-radius: 12px;
+	padding: 15px;
+	text-transform: uppercase;
+	background-color: white;
+}
+
+.bttnRDV a {
+	text-decoration: none;
+	color: #3d64ad;
+}
 /* ------------------------ Header------------------------------ */
 
 .navbar div {
@@ -78,8 +93,7 @@ h2 {
 	justify-content: center;
 }
 
-.nav-item,
-.nav-item button {
+.nav-item {
 	font-weight: bold;
 	font-size: 1.5rem;
 	text-transform: uppercase;
@@ -87,14 +101,12 @@ h2 {
 	line-height: 1em;
 }
 
-button {
-	border-color: #3d64ad;
-	border-radius: 12px;
-	padding: 15px;
-	background-color: white;
+.nav-item .bttnRDV {
+	font-size: 1.5rem;
 }
-button a {
-	text-decoration: none;
+
+.nav-item a {
+	color: #3d64ad;
 }
 
 /* ==========================SECTION CABINET================ */
@@ -116,10 +128,14 @@ button a {
 
 #cabinet article {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 0%;
 	margin: auto 20%;
 }
+
+#cabinet article h2 {
+	margin: 5% auto 20% auto;
+}
+
 #cabinet article p {
 	color: black;
 	text-shadow: -3px -3px 8px white, 3px 3px 8px white;
@@ -134,6 +150,13 @@ button a {
 	object-fit: cover;
 	height: 100vh;
 	max-height: 1080px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	width: 15rem;
+	height: 15rem;
+	
 }
 
 /* =======================Section Pourquoi Prendre Rendez-vous============= */
@@ -186,10 +209,10 @@ button a {
 	height: 150px;
 	width: 150px;
 	margin: 0 auto;
+	object-fit: contain;
 }
 
 #pourquoi-consulter figure img {
-	object-fit: contain;
 	height: 100%;
 	width: 100%;
 	margin: 0;
@@ -212,7 +235,7 @@ button a {
 #genito {
 	height: 510px;
 	width: 100%;
-	max-width: 531px;
+	max-width: 510px;
 	padding: 35px;
 }
 
@@ -235,7 +258,7 @@ button a {
 	max-width: 450px;
 	padding: 20px;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (max-width: 550px) {
 	.colonne-conteneur {
 		display: flex;
 		flex-direction: column;
@@ -243,7 +266,7 @@ button a {
 		justify-content: space-around;
 	}
 }
-@media screen and (max-width: 1141px) {
+@media screen and (min-width: 551px) {
 	#musculaire {
 		position: absolute;
 		top: 3%;
@@ -283,8 +306,219 @@ button a {
 		transform: translateX(-50%);
 	}
 }
+
+/* ======================== Section : Pour Qui Prendre RDV================= */
+#pour-qui {
+	position: relative;
+}
+
+#pour-qui article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: none;
+
+	position: relative;
+	height: 450px;
+	width: 100%;
+	max-width: 450px;
+	padding: 35px;
+	border-radius: 50%;
+	object-fit: cover;
+
+	cursor: pointer;
+}
+
+
+.pourqui-contenu h3 {
+	font-size: 2.5rem;
+	color: #f28d32;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px white;
+	margin: 0;
+}
+
+.pourqui-contenu figure {
+	height: 150px;
+	width: 150px;
+	margin: 0 auto;
+}
+
+.pourqui-contenu figure img {
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.pourqui-contenu p {
+	color: #f57200;
+	text-shadow: 2px 2px 2px white;
+	font-weight: 400;
+}
+
+#nourrisson::before,
+#enfants::before,
+#adultes::before,
+#seniors::before,
+#enceintes::before,
+#sportifs::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	opacity: 0.4;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+#nourrisson::before {
+	background-image: url("../images/bkg_nourrisson.svg");
+}
+
+#enfants::before {
+	background-image: url("../images/bkg_enfants.svg");
+}
+
+#adultes::before {
+	background-image: url("../images/bkg_adultes.svg");
+}
+
+#seniors::before {
+	background-image: url("../images/bkg_seniors.svg");
+}
+
+#enceintes::before {
+	background-image: url("../images/bkg_femme_enceinte.svg");
+}
+
+#sportifs::before {
+	background-image: url("../images/bkg_sportifs.svg");
+}
+
+.pourqui-contenu {
+	position: relative;
+}
+
+#nourrissonVitrine {
+	display: block;
+}
+
+#nourrissonTexte {
+	display: none;
+}
+
+#enfantsVitrine {
+	display: block;
+}
+
+#enfantsTexte {
+	display: none;
+}
+
+#adultesVitrine {
+	display: block;
+}
+
+#adultesTexte {
+	display: none;
+}
+
+#seniorsVitrine {
+	display: block;
+}
+
+#seniorsTexte {
+	display: none;
+}
+
+#enceintesVitrine {
+	display: block;
+}
+
+#enceintesTexte {
+	display: none;
+}
+
+#sportifsVitrine {
+	display: block;
+	flex-direction: column;
+}
+
+#sportifsTexte {
+	display: none;
+}
+
+/* =================CONTACT==================== */
+#contact {
+	height: 1080px;
+	border-top: #3d64ad 1px solid;
+}
+
+#contact article {
+	margin: 80px 20%;
+	text-align: center;
+	font-size: 1.9rem;
+}
+
+#contact article div,
+#contact h3 {
+	margin: 30px auto;
+}
+
+#contact article div {
+	display: flex;
+	justify-content: center;
+}
+
+#contact h3 {
+	font-weight: bold;
+	color: #3d64ad;
+}
+
+#contact h3,
+#contact span {
+	text-transform: uppercase;
+}
+
+#contact figure {
+	height: 40px;
+	width: 40px;
+	object-fit: contain;
+	margin: 0;
+	padding: 0;
+}
+
+#contact figure img {
+	height: 100%;
+	width: 100%;
+}
+
+.telephone {
+	font-size: 1.3rem;
+}
+
+.telephone span {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+#contact .bttnRDV {
+	font-size: 2.5rem;
+}
+
 /* -------------Boutton de retour en haut de page------------------- */
-#pourquoiTopBttn {
+
+.topBttn {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -294,12 +528,33 @@ button a {
 	padding: 0;
 }
 
-#pourquoiTopBttn img {
+.topBttn img {
 	width: 35px;
 	height: auto;
 }
 
 /* ========================footer=========================== */
 footer {
-	background-color: #cdcdce;
+	background-color: rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 1.5rem;
+	padding-bottom: 10px;
+}
+
+footer div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+footer p {
+	margin: 0 20px;
+}
+
+footer span {
+	text-transform: uppercase;
 }

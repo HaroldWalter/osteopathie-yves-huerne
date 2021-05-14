@@ -23,7 +23,7 @@
                <?php endforeach; ?>
           
          <div class="col-md-2 nav-item">
-         <button>
+         <button class="bttnRDV">
             <a href="https://us.cloudamo.com/index.php/apps/appointments/pub/O6%2B%2Bil3TjvYevRxivClmyH_nfIdUuu8ijwfgbw%3D%3D/form ?>"> Prendre RDV</a></button>
          </div>
       </nav>
