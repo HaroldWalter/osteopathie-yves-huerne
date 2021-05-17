@@ -42,6 +42,7 @@ h2 {
 	text-align: center;
 }
 
+
 .titrePetitEcran {
 	display: none;
 }
@@ -382,27 +383,27 @@ h2 {
 }
 
 #nourrisson::before {
-	background-image: url("../images/bkg_nourrisson.svg");
+	background-image: url("../images/bkg_nourrisson.png");
 }
 
 #enfants::before {
-	background-image: url("../images/bkg_enfants.svg");
+	background-image: url("../images/bkg_enfants.png");
 }
 
 #adultes::before {
-	background-image: url("../images/bkg_adultes.svg");
+	background-image: url("../images/bkg_adultes.png");
 }
 
 #seniors::before {
-	background-image: url("../images/bkg_seniors.svg");
+	background-image: url("../images/bkg_seniors.png");
 }
 
 #enceintes::before {
-	background-image: url("../images/bkg_femme_enceinte.svg");
+	background-image: url("../images/bkg_femme_enceinte.png");
 }
 
 #sportifs::before {
-	background-image: url("../images/bkg_sportifs.svg");
+	background-image: url("../images/bkg_sportifs.png");
 }
 
 .pourqui-contenu {
@@ -462,12 +463,15 @@ h2 {
 #contact {
 	height: 1080px;
 	border-top: #3d64ad 1px solid;
+	position: relative;
+	
 }
 
 #contact article {
 	margin: 80px 20%;
 	text-align: center;
 	font-size: 1.9rem;
+	
 }
 
 #contact article div,
@@ -524,14 +528,21 @@ h2 {
 	transform: translateY(-50%);
 	right: 0;
 	z-index: 99;
+
 	border: none;
+	background-color: transparent;
+	
 	padding: 0;
+	margin: 0;
+	
+	
 }
 
 .topBttn img {
 	width: 35px;
 	height: auto;
 }
+
 
 /* ========================footer=========================== */
 footer {
