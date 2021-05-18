@@ -87,6 +87,10 @@ h2 {
 	text-transform: uppercase;
 }
 
+.bttnRDV:hover, .bttnRDV:focus {
+	background-color: #f28d32;
+}
+
 /* ------------------------ Header------------------------------ */
 
 .navbar div {
@@ -110,7 +114,6 @@ h2 {
 	font-weight: bold;
 	font-size: 1.5rem;
 	text-transform: uppercase;
-	color: #3d64ad;
 	line-height: 1em;
 }
 
@@ -120,6 +123,10 @@ h2 {
 
 .nav-item a {
 	color: #3d64ad;
+}
+
+.nav-item a:hover, .nav-item a:focus {
+	color: #f28d32;
 }
 
 /* ==========================SECTION CABINET================ */
@@ -312,13 +319,18 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	border: none;
 
-	padding: 35px;
+	border: none;
 	border-radius: 50%;
+
+	padding: 35px;	
 	object-fit: cover;
 
 	cursor: pointer;
+}
+
+#pour-qui article:hover, #pour-qui article:focus {
+	border: #f57200 1px solid;
 }
 
 .pourqui-contenu h3 {
@@ -402,54 +414,14 @@ h2 {
 	position: relative;
 }
 
-#nourrissonVitrine {
+#nourrissonVitrine, #enfantsVitrine, #adultesVitrine, #seniorsVitrine, #enceintesVitrine, #sportifsVitrine {
 	display: block;
 }
 
-#nourrissonTexte {
+#nourrissonTexte, #enfantsTexte, #adultesTexte, #seniorsTexte, #enceintesTexte, #sportifsTexte {
 	display: none;
 }
 
-#enfantsVitrine {
-	display: block;
-}
-
-#enfantsTexte {
-	display: none;
-}
-
-#adultesVitrine {
-	display: block;
-}
-
-#adultesTexte {
-	display: none;
-}
-
-#seniorsVitrine {
-	display: block;
-}
-
-#seniorsTexte {
-	display: none;
-}
-
-#enceintesVitrine {
-	display: block;
-}
-
-#enceintesTexte {
-	display: none;
-}
-
-#sportifsVitrine {
-	display: block;
-	flex-direction: column;
-}
-
-#sportifsTexte {
-	display: none;
-}
 
 @media screen and (max-width: 550px) {
 	#pour-qui article {
