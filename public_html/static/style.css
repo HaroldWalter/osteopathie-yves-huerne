@@ -42,39 +42,51 @@ h2 {
 	text-align: center;
 }
 
-
 .titrePetitEcran {
-	display: none;
-}
-
-.titreGrandEcran {
 	display: block;
 }
 
-@media screen and (max-width: 1140px) {
+.titreGrandEcran {
+	display: none;
+}
+
+.colonne-conteneur {
+	position: relative;
+	height: 1080px;
+}
+
+@media screen and (max-width: 550px) {
+	.colonne-conteneur {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+@media screen and (min-width: 1441px) {
 	.titrePetitEcran {
-		display: block;
+		display: none;
 	}
 
 	.titreGrandEcran {
-		display: none;
+		display: block;
 	}
 }
 
 /* Bouton de prise de rendez-vous */
 .bttnRDV {
-	font-weight: bold;
 	border-color: #3d64ad;
 	border-radius: 12px;
-	padding: 15px;
-	text-transform: uppercase;
+
 	background-color: white;
+	padding: 15px;
+
+	color: #3d64ad;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
-.bttnRDV a {
-	text-decoration: none;
-	color: #3d64ad;
-}
 /* ------------------------ Header------------------------------ */
 
 .navbar div {
@@ -113,8 +125,8 @@ h2 {
 /* ==========================SECTION CABINET================ */
 #cabinet {
 	position: relative;
-	height: 100vh;
-	max-height: 1080px;
+
+	height: 1080px;
 }
 
 #cabinet .voile {
@@ -122,8 +134,7 @@ h2 {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 100vh;
-	max-height: 1080px;
+	height: 1080px;
 	background-color: rgba(128, 128, 128, 0.4);
 }
 
@@ -143,21 +154,18 @@ h2 {
 }
 /* -------------------Caroussel------------ */
 .carousel {
-	height: 100vh;
-	max-height: 1080px;
+	height: 1080px;
 }
 
 .carousel-item img {
 	object-fit: cover;
-	height: 100vh;
-	max-height: 1080px;
+	height: 1080px;
 }
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
 	width: 15rem;
 	height: 15rem;
-	
 }
 
 /* =======================Section Pourquoi Prendre Rendez-vous============= */
@@ -173,11 +181,6 @@ h2 {
 
 	height: 100%;
 	opacity: 0.2;
-}
-
-.colonne-conteneur {
-	position: relative;
-	height: 1080px;
 }
 
 #pourquoi-consulter article {
@@ -204,6 +207,7 @@ h2 {
 	font-size: 1rem;
 	color: black;
 	word-wrap: normal;
+	max-width: 80vw;
 }
 
 #pourquoi-consulter figure {
@@ -222,21 +226,19 @@ h2 {
 
 #digestif figure {
 	height: 200px;
-	max-width: 200px;
+	width: 200px;
 }
 
 #musculaire,
 #nerveux {
 	height: 450px;
-	width: 100%;
-	max-width: 450px;
+	width: 450px;
 	padding: 35px;
 }
 
 #genito {
 	height: 510px;
-	width: 100%;
-	max-width: 510px;
+	width: 510px;
 	padding: 35px;
 }
 
@@ -248,25 +250,16 @@ h2 {
 
 #digestif {
 	height: 550px;
-	width: 100%;
-	max-width: 550px;
+	width: 550px;
 	padding: 30px;
 }
 
 #vasculaire {
 	height: 450px;
-	width: 100%;
-	max-width: 450px;
+	width: 450px;
 	padding: 20px;
 }
-@media screen and (max-width: 550px) {
-	.colonne-conteneur {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-	}
-}
+
 @media screen and (min-width: 551px) {
 	#musculaire {
 		position: absolute;
@@ -321,17 +314,12 @@ h2 {
 	text-align: center;
 	border: none;
 
-	position: relative;
-	height: 450px;
-	width: 100%;
-	max-width: 450px;
 	padding: 35px;
 	border-radius: 50%;
 	object-fit: cover;
 
 	cursor: pointer;
 }
-
 
 .pourqui-contenu h3 {
 	font-size: 2.5rem;
@@ -359,7 +347,11 @@ h2 {
 .pourqui-contenu p {
 	color: #f57200;
 	text-shadow: 2px 2px 2px white;
+
 	font-weight: 400;
+	word-wrap: normal;
+
+	max-width: 80vw;
 }
 
 #nourrisson::before,
@@ -459,19 +451,154 @@ h2 {
 	display: none;
 }
 
+@media screen and (max-width: 550px) {
+	#pour-qui article {
+		position: relative;
+		height: 450px;
+		width: 450px;
+	}
+}
+
+@media screen and (min-width: 551px) and (max-width: 1440px) {
+	#nourrisson {
+		position: absolute;
+		top: 0;
+		left: 5px;
+		z-index: 2;
+
+		height: 550px;
+		width: 550px;
+	}
+
+	#enfants {
+		position: absolute;
+		bottom: 7%;
+		right: 20px;
+		z-index: 2;
+
+		height: 500px;
+		width: 500px;
+	}
+
+	#adultes {
+		position: absolute;
+		top: -10%;
+		left: 0;
+
+		z-index: 1;
+
+		height: 590px;
+		width: 590px;
+	}
+
+	#seniors {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		z-index: 0;
+
+		height: 590px;
+		width: 590px;
+	}
+
+	#enceintes {
+		position: absolute;
+		top: 0;
+		left: -5%;
+		z-index: 1;
+
+		height: 630px;
+		width: 603px;
+	}
+
+	#sportifs {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 2;
+
+		height: 500px;
+		width: 500px;
+	}
+}
+
+@media screen and (min-width: 1441px) {
+	#nourrisson {
+		position: absolute;
+		top: 0;
+		left: 5px;
+		z-index: 2;
+
+		height: 550px;
+		width: 550px;
+	}
+
+	#enfants {
+		position: absolute;
+		bottom: 0;
+		right: 20px;
+		z-index: 2;
+
+		height: 500px;
+		width: 500px;
+	}
+
+	#adultes {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		transform: translateX(-30%);
+
+		z-index: 1;
+
+		height: 590px;
+		width: 590px;
+	}
+
+	#seniors {
+		position: absolute;
+		bottom: 0;
+		right: -28%;
+
+		z-index: 0;
+
+		height: 590px;
+		width: 590px;
+	}
+
+	#enceintes {
+		position: absolute;
+		top: 0;
+		left: -5%;
+		z-index: 1;
+
+		height: 630px;
+		width: 603px;
+	}
+
+	#sportifs {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 2;
+
+		height: 500px;
+		width: 500px;
+	}
+}
+
 /* =================CONTACT==================== */
 #contact {
 	height: 1080px;
 	border-top: #3d64ad 1px solid;
 	position: relative;
-	
 }
 
 #contact article {
 	margin: 80px 20%;
 	text-align: center;
 	font-size: 1.9rem;
-	
 }
 
 #contact article div,
@@ -490,7 +617,7 @@ h2 {
 }
 
 #contact h3,
-#contact span {
+#contact .ville {
 	text-transform: uppercase;
 }
 
@@ -517,7 +644,7 @@ h2 {
 }
 
 #contact .bttnRDV {
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 /* -------------Boutton de retour en haut de page------------------- */
@@ -531,11 +658,9 @@ h2 {
 
 	border: none;
 	background-color: transparent;
-	
+
 	padding: 0;
 	margin: 0;
-	
-	
 }
 
 .topBttn img {
@@ -543,6 +668,30 @@ h2 {
 	height: auto;
 }
 
+/* =====================Mentions légales================= */
+#mentions-legales {
+	margin: 0 20%;
+	font-size: 1.25rem;
+}
+
+#mentions-legales section {
+	margin-top: 30px;
+}
+#mentions-legales h3 {
+	color: #3d64ad;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 3rem;
+}
+
+#mentions-legales h4 {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+#mentions-legales span {
+	text-transform: uppercase;
+}
 
 /* ========================footer=========================== */
 footer {
@@ -552,8 +701,8 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 
-	font-size: 1.5rem;
-	padding-bottom: 10px;
+	font-size: 1.25rem;
+	padding: 10px 0;
 }
 
 footer div {

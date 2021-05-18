@@ -5,7 +5,7 @@
       <h3>Yves Huerne Ostéopathie</h3>
       <div>
          <figure><img src="./images/localisation.png" alt="symbole de localisation"></figure>
-         <p> <em>56 rue Victor Hugo, 69780 <span>Mions</span></em></p>
+         <p> <em>56 rue Victor Hugo, 69780 <span class="ville">Mions</span></em></p>
       </div>
       <div>
          <figure><img src="./images/telephone.png" alt="téléphone"></figure>
@@ -22,7 +22,7 @@
          </p>
       </div>
 
-      <button class="bttnRDV"><a href="https://us.cloudamo.com/index.php/apps/appointments/pub/O6%2B%2Bil3TjvYevRxivClmyH_nfIdUuu8ijwfgbw%3D%3D/form">Prendre RDV</a></button>
+      <button class="bttnRDV" type="button" onclick="window.location.href='https://us.cloudamo.com/index.php/apps/appointments/pub/O6%2B%2Bil3TjvYevRxivClmyH_nfIdUuu8ijwfgbw%3D%3D/form';" >Prendre RDV</button>
    </article>
    <button onclick="topFonction()" id="contactTopBttn" title="Retour en haut de la page" class='topBttn'><img src="<?= CHEMIN_IMAGES ?>fleche_haut.png" alt="Flèche vers haut de la page"></button>
 </section>
