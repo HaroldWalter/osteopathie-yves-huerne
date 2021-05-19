@@ -8,7 +8,7 @@
          <article id="nourrisson" tabindex="0" onclick="changeTexte('nourrissonVitrine', 'nourrissonTexte')">
             <div class="pourqui-contenu" >
                <div id='nourrissonVitrine' >
-                  <figure><img src="<?= CHEMIN_IMAGES ?>nourrisson.png" alt="une face de nourrisson"></figure>
+                  <figure><img src="<?= CHEMIN_IMAGES ?>nourrisson.webp" alt="une face de nourrisson"></figure>
                   <h3>
                      Les <br> nourrisons
                   </h3>
@@ -22,7 +22,7 @@
          <article id="enfants" tabindex="0" onclick="changeTexte('enfantsVitrine', 'enfantsTexte')">
             <div class="pourqui-contenu" >
                <div id='enfantsVitrine' >
-                  <figure><img src="<?= CHEMIN_IMAGES ?>enfants.png" alt="deux faces d'enfants"></figure>
+                  <figure><img src="<?= CHEMIN_IMAGES ?>enfants.webp" alt="deux faces d'enfants"></figure>
                   <h3>
                      Enfants & adolescents
                   </h3>
@@ -42,7 +42,7 @@
          <article id="adultes" tabindex="0" onclick="changeTexte('adultesVitrine', 'adultesTexte')">
             <div class="pourqui-contenu" >
                <div id='adultesVitrine'>
-                  <figure><img src="<?= CHEMIN_IMAGES ?>adultes.png" alt="deux faces d'adultes"></figure>
+                  <figure><img src="<?= CHEMIN_IMAGES ?>adultes.webp" alt="deux faces d'adultes"></figure>
                   <h3>
                      Adultes
                   </h3>
@@ -57,7 +57,7 @@
          <article id="seniors" tabindex="0" onclick="changeTexte('seniorsVitrine', 'seniorsTexte')">
             <div class="pourqui-contenu" >
                <div id='seniorsVitrine'>
-                  <figure><img src="<?= CHEMIN_IMAGES ?>seniors.png" alt="deux faces de seniors"></figure>
+                  <figure><img src="<?= CHEMIN_IMAGES ?>seniors.webp" alt="deux faces de seniors"></figure>
                   <h3>
                      Seniors
                   </h3>
@@ -74,7 +74,7 @@
          <article id="enceintes" tabindex="0" onclick="changeTexte('enceintesVitrine', 'enceintesTexte')">
             <div class="pourqui-contenu" >
                <div id='enceintesVitrine'>
-                  <figure><img src="<?= CHEMIN_IMAGES ?>femme_enceinte.png" alt="une femme enceinte"></figure>
+                  <figure><img src="<?= CHEMIN_IMAGES ?>femme_enceinte.webp" alt="une femme enceinte"></figure>
                   <h3>
                      Femmes enceintes
                   </h3>
@@ -89,7 +89,7 @@
          <article id="sportifs" tabindex="0" onclick="changeTexte('sportifsVitrine', 'sportifsTexte')">
             <div class="pourqui-contenu" >
                <div id='sportifsVitrine'>
-                  <figure><img src="<?= CHEMIN_IMAGES ?>muscle.png" alt="un bras musclé"></figure>
+                  <figure><img src="<?= CHEMIN_IMAGES ?>muscle.webp" alt="un bras musclé"></figure>
                   <h3>
                      Sportifs
                   </h3>
@@ -101,5 +101,5 @@
          </article>
       </div>
    </div>
-   <button onclick="topFonction()" id="pourQuiTopBttn" title="Retour en haut de la page" class="topBttn"><img src="<?= CHEMIN_IMAGES ?>fleche_haut.png" alt="Flèche vers haut de la page"></button>
+   <button onclick="topFonction()" id="pourQuiTopBttn" title="Retour en haut de la page" class="topBttn"><img src="<?= CHEMIN_IMAGES ?>fleche_haut.webp" alt="Flèche vers haut de la page"></button>
 </section>

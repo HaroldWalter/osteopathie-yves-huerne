@@ -1,5 +1,5 @@
 <section id="<?= ANCRE_POURQUOI_CONSULTER ?>">
-   <img class="image-fond" src="./images/logo_seul.png" alt="">
+   <img class="image-fond" src="./images/logo_seul.webp" alt="">
 
 
    <h2 class="titrePetitEcran">Pourquoi prendre <br> RDV</h2>
@@ -11,7 +11,7 @@
             </h3>
             <p>Les principaux motifs de consulation chez l'ostéopathe sont des douleurs ou des gênes fonctionnelles, pouvant parfois faire suite à un traumatisme ou à un faux mouvement, et qui touchent le système musculo-squelettique :</p>
             <p>Raideur, gêne, douleur aiguë ou chronique affectant les régions lombaire, dorsale ou cervicale de la colonne vertébrale ou encore touchant une épaule, une cheville ou un genou représentent le quotidien de l'ostéopathe.</p>
-            <figure><img src="<?= CHEMIN_IMAGES ?>musculo_squelettique.png" alt="schéma du dos et de la colonne vertébral"></figure>
+            <figure><img src="<?= CHEMIN_IMAGES ?>musculo_squelettique.webp" alt="schéma du dos et de la colonne vertébral"></figure>
          </article>
          <article id="genito">
             <h3>
@@ -19,7 +19,7 @@
             </h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <figure><img src="<?= CHEMIN_IMAGES ?>reins.png" alt="schéma des reins et de la vessie"></figure>
+            <figure><img src="<?= CHEMIN_IMAGES ?>reins.webp" alt="schéma des reins et de la vessie"></figure>
          </article>
       </div>
 
@@ -33,7 +33,7 @@
             </h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
-            <figure><img src="<?= CHEMIN_IMAGES ?>cerveau.png" alt="schéma du cerveau"></figure>
+            <figure><img src="<?= CHEMIN_IMAGES ?>cerveau.webp" alt="schéma du cerveau"></figure>
          </article>
          <article id="orl">
             <h3>
@@ -41,7 +41,7 @@
             </h3>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <figure><img src="<?= CHEMIN_IMAGES ?>orl.png" alt="schéma du système oto-rhino-laryngologique"></figure>
+            <figure><img src="<?= CHEMIN_IMAGES ?>orl.webp" alt="schéma du système oto-rhino-laryngologique"></figure>
          </article>
       </div>
 
@@ -51,7 +51,7 @@
                Système digestif :
             </h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
-            <figure><img src="<?= CHEMIN_IMAGES ?>estomac.png" alt="schéma de l'estomac"></figure>
+            <figure><img src="<?= CHEMIN_IMAGES ?>estomac.webp" alt="schéma de l'estomac"></figure>
          </article>
 
          <article id="vasculaire">
@@ -60,9 +60,9 @@
             </h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
 
-            <figure><img src="<?= CHEMIN_IMAGES ?>coeur.png" alt="un coeur"></figure>
+            <figure><img src="<?= CHEMIN_IMAGES ?>coeur.webp" alt="un coeur"></figure>
          </article>
       </div>
    </div>
-   <button onclick="topFonction()" id="pourquoiTopBttn" title="Retour en haut de la page"class='topBttn'><img src="<?= CHEMIN_IMAGES ?>fleche_haut.png" alt="Flèche vers haut de la page"></button>
+   <button onclick="topFonction()" id="pourquoiTopBttn" title="Retour en haut de la page"class='topBttn'><img src="<?= CHEMIN_IMAGES ?>fleche_haut.webp" alt="Flèche vers haut de la page"></button>
 </section>

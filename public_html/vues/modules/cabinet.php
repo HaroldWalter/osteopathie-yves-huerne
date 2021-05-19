@@ -4,16 +4,16 @@
    <div id="carouselCabinet" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
          <div class="carousel-item active">
-            <img src="<?= CHEMIN_IMAGES ?>exterieur.png" class="d-block w-100"  alt="Extérieur du cabinet">
+            <img src="<?= CHEMIN_IMAGES ?>exterieur.webp" class="d-block w-100"  alt="Extérieur du cabinet">
          </div>
          <div class="carousel-item">
-            <img src="<?= CHEMIN_IMAGES ?>acces_cabinet.png" class="d-block w-100"  alt="Accès du cabinet">
+            <img src="<?= CHEMIN_IMAGES ?>acces_cabinet.webp" class="d-block w-100"  alt="Accès du cabinet">
          </div>
          <div class="carousel-item">
-            <img src="<?= CHEMIN_IMAGES ?>salle_dattente.png" class="d-block  w-100" alt="Salle d'attente">
+            <img src="<?= CHEMIN_IMAGES ?>salle_dattente.webp" class="d-block  w-100" alt="Salle d'attente">
          </div>
          <div class="carousel-item">
-            <img src="<?= CHEMIN_IMAGES ?>cabinet.png" class="d-block w-100" alt="Cabinet">
+            <img src="<?= CHEMIN_IMAGES ?>cabinet.webp" class="d-block w-100" alt="Cabinet">
          </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabinet" data-bs-slide="prev">

@@ -14,9 +14,9 @@ body {
 header,
 footer {
 	max-width: 1920px;
-	height: 100px;
 	margin: 0 auto;
 }
+
 
 header > div,
 header nav {
@@ -92,7 +92,9 @@ h2 {
 }
 
 /* ------------------------ Header------------------------------ */
-
+header {
+	height: 100px;
+}
 .navbar div {
 	text-align: center;
 	height: 100%;
@@ -178,6 +180,7 @@ h2 {
 /* =======================Section Pourquoi Prendre Rendez-vous============= */
 #pourquoi-consulter {
 	position: relative;
+	min-height: 1080px;
 }
 
 #pourquoi-consulter .image-fond {
@@ -387,27 +390,27 @@ h2 {
 }
 
 #nourrisson::before {
-	background-image: url("../images/bkg_nourrisson.png");
+	background-image: url("../images/bkg_nourrisson.webp");
 }
 
 #enfants::before {
-	background-image: url("../images/bkg_enfants.png");
+	background-image: url("../images/bkg_enfants.webp");
 }
 
 #adultes::before {
-	background-image: url("../images/bkg_adultes.png");
+	background-image: url("../images/bkg_adultes.webp");
 }
 
 #seniors::before {
-	background-image: url("../images/bkg_seniors.png");
+	background-image: url("../images/bkg_seniors.webp");
 }
 
 #enceintes::before {
-	background-image: url("../images/bkg_femme_enceinte.png");
+	background-image: url("../images/bkg_femme_enceinte.webp");
 }
 
 #sportifs::before {
-	background-image: url("../images/bkg_sportifs.png");
+	background-image: url("../images/bkg_sportifs.webp");
 }
 
 .pourqui-contenu {
@@ -562,11 +565,25 @@ h2 {
 
 /* =================CONTACT==================== */
 #contact {
-	height: 1080px;
 	border-top: #3d64ad 1px solid;
 	position: relative;
 }
+.iframe-container {
+	position: relative;
+  overflow: hidden;
+  width: 50vw;
+  height: 40vh;
+  }
 
+.iframe-responsive {
+	position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+ }
 #contact article {
 	margin: 80px 20%;
 	text-align: center;
@@ -619,6 +636,11 @@ h2 {
 	font-size: 2rem;
 }
 
+@media screen and (min-width:750px) {
+	#contact {
+		height: 1080px;
+	}
+	}
 /* -------------Boutton de retour en haut de page------------------- */
 
 .topBttn {
@@ -675,6 +697,8 @@ footer {
 
 	font-size: 1.25rem;
 	padding: 10px 0;
+
+	min-height: 100px;
 }
 
 footer div {
@@ -689,4 +713,10 @@ footer p {
 
 footer span {
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 750px) { 
+	footer div {
+		flex-wrap: wrap;
+	}
 }
