@@ -17,7 +17,6 @@ footer {
 	margin: 0 auto;
 }
 
-
 header > div,
 header nav {
 	height: 100%;
@@ -42,6 +41,14 @@ h2 {
 	text-align: center;
 }
 
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
 .titrePetitEcran {
 	display: block;
 }
@@ -53,24 +60,25 @@ h2 {
 .colonne-conteneur {
 	position: relative;
 	height: 1080px;
-}
 
-@media screen and (max-width: 550px) {
-	.colonne-conteneur {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-	}
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
 @media screen and (min-width: 1441px) {
+	.colonne-conteneur {
+		display: block;
+		}
+	
 	.titrePetitEcran {
 		display: none;
 	}
 
 	.titreGrandEcran {
 		display: block;
+		
 	}
 }
 
@@ -80,57 +88,134 @@ h2 {
 	border-radius: 12px;
 
 	background-color: white;
-	padding: 15px;
+	padding: 10px;
 
 	color: #3d64ad;
 	font-weight: bold;
 	text-transform: uppercase;
+	font-size: 2.5rem;
 }
 
-.bttnRDV:hover, .bttnRDV:focus {
+.bttnRDV:hover,
+.bttnRDV:focus {
 	background-color: #f28d32;
 }
 
-/* ------------------------ Header------------------------------ */
-header {
-	height: 100px;
-}
-.navbar div {
-	text-align: center;
-	height: 100%;
+/* -------------Boutton de retour en haut de page------------------- */
+
+.topBttn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	z-index: 99;
+
+	border: none;
+	background-color: transparent;
+	border-radius: 50%;
+
+	padding: 0;
+	margin: 0;
 }
 
-.navbar-brand img {
-	object-fit: contain;
-	max-width: 100%;
-	max-height: 100%;
+.topBttn:hover,
+.topBttn:focus {
+	background-color: #3d64ad;
 }
 
-.nav-item {
+.topBttn img {
+	width: 35px;
+	height: auto;
+}
+
+/* =======================HEADER======================= */
+
+nav {
 	display: flex;
+	justify-content: space-evenly;
 	align-items: center;
-	justify-content: center;
+	padding: 1rem 2.5rem;
 }
 
-.nav-item {
+.hamburger {
+	display: none;
+}
+
+.barre {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #3d64ad;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.menu-item {
+	margin-left: 5rem;
+	text-align: center;
+}
+
+.menu-link {
 	font-weight: bold;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	line-height: 1em;
-}
-
-.nav-item .bttnRDV {
-	font-size: 1.5rem;
-}
-
-.nav-item a {
 	color: #3d64ad;
 }
 
-.nav-item a:hover, .nav-item a:focus {
+nav .bttnRDV {
+	font-size: 2rem;
+}
+
+.menu-link:hover,
+.menu-link:hover {
 	color: #f28d32;
 }
 
+/* -----------------RWD-------------------------- */
+
+@media only screen and (max-width: 1024px) {
+	.menu {
+		position: fixed;
+		left: -100%;
+		top: 5rem;
+		flex-direction: column;
+		background-color: #fff;
+		width: 100%;
+		border-radius: 10px;
+		text-align: center;
+		transition: 0.3s;
+		box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+		z-index: 3;
+	}
+
+	.menu.active {
+		left: 0;
+	}
+
+	.menu-item {
+		margin: 2.5rem 0;
+	}
+
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width:1441px) {
+	header {
+		height: 100px;
+	}
+}
 /* ==========================SECTION CABINET================ */
 #cabinet {
 	position: relative;
@@ -184,13 +269,20 @@ header {
 }
 
 #pourquoi-consulter .image-fond {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
+	position: -webkit-sticky;
+	position: sticky;
+	top: 30%;
+	left: -10%;
+	/* transform: translateX(-50%); */
 
-	height: 100%;
+	width: 100%;
+
 	opacity: 0.2;
+}
+
+.pourquoi-contenu {
+	width: 100%;
+	overflow: hidden;
 }
 
 #pourquoi-consulter article {
@@ -210,7 +302,7 @@ header {
 	color: #f28d32;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin: 1.5rem;
+	margin: 1.2rem;
 }
 
 #pourquoi-consulter article p {
@@ -241,8 +333,8 @@ header {
 
 #musculaire,
 #nerveux {
-	height: 450px;
-	width: 450px;
+	height: 470px;
+	width: 470px;
 	padding: 35px;
 }
 
@@ -270,7 +362,9 @@ header {
 	padding: 20px;
 }
 
-@media screen and (min-width: 551px) {
+/* -----------------RWD-------------------------- */
+
+@media screen and (min-width: 769px) {
 	#musculaire {
 		position: absolute;
 		top: 3%;
@@ -311,9 +405,27 @@ header {
 	}
 }
 
+@media screen and (min-width: 1081px) {
+	#pourquoi-consulter .image-fond {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+
+		width: 1080px;
+		height: 1080px;
+
+		opacity: 0.2;
+	}
+}
+
 /* ======================== Section : Pour Qui Prendre RDV================= */
 #pour-qui {
 	position: relative;
+	width: 100%;
+	overflow: hidden;
+
+	border-top: #3d64ad 1px solid;
 }
 
 #pour-qui article {
@@ -326,13 +438,14 @@ header {
 	border: none;
 	border-radius: 50%;
 
-	padding: 35px;	
+	padding: 35px;
 	object-fit: cover;
 
 	cursor: pointer;
 }
 
-#pour-qui article:hover, #pour-qui article:focus {
+#pour-qui article:hover,
+#pour-qui article:focus {
 	border: #f57200 1px solid;
 }
 
@@ -417,14 +530,25 @@ header {
 	position: relative;
 }
 
-#nourrissonVitrine, #enfantsVitrine, #adultesVitrine, #seniorsVitrine, #enceintesVitrine, #sportifsVitrine {
+#nourrissonVitrine,
+#enfantsVitrine,
+#adultesVitrine,
+#seniorsVitrine,
+#enceintesVitrine,
+#sportifsVitrine {
 	display: block;
 }
 
-#nourrissonTexte, #enfantsTexte, #adultesTexte, #seniorsTexte, #enceintesTexte, #sportifsTexte {
+#nourrissonTexte,
+#enfantsTexte,
+#adultesTexte,
+#seniorsTexte,
+#enceintesTexte,
+#sportifsTexte {
 	display: none;
 }
 
+/* -----------------RWD-------------------------- */
 
 @media screen and (max-width: 550px) {
 	#pour-qui article {
@@ -493,8 +617,8 @@ header {
 		right: 0;
 		z-index: 2;
 
-		height: 500px;
-		width: 500px;
+		height: 480px;
+		width: 480px;
 	}
 }
 
@@ -570,24 +694,24 @@ header {
 }
 .iframe-container {
 	position: relative;
-  overflow: hidden;
-  width: 50vw;
-  height: 40vh;
-  }
+	overflow: hidden;
+	width: 50vw;
+	height: 40vh;
+}
 
 .iframe-responsive {
 	position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
- }
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
 #contact article {
 	margin: 80px 20%;
 	text-align: center;
-	font-size: 1.9rem;
+	font-size: 2.5rem;
 }
 
 #contact article div,
@@ -601,8 +725,11 @@ header {
 }
 
 #contact h3 {
+	font-size: 2.5rem;
 	font-weight: bold;
 	color: #3d64ad;
+	
+	
 }
 
 #contact h3,
@@ -632,35 +759,14 @@ header {
 	font-weight: 600;
 }
 
-#contact .bttnRDV {
-	font-size: 2rem;
-}
+/* -----------------RWD-------------------------- */
 
-@media screen and (min-width:750px) {
+@media screen and (min-width: 750px) {
 	#contact {
 		height: 1080px;
 	}
-	}
-/* -------------Boutton de retour en haut de page------------------- */
-
-.topBttn {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	right: 0;
-	z-index: 99;
-
-	border: none;
-	background-color: transparent;
-
-	padding: 0;
-	margin: 0;
 }
 
-.topBttn img {
-	width: 35px;
-	height: auto;
-}
 
 /* =====================Mentions légales================= */
 #mentions-legales {
@@ -693,6 +799,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: center;
 
 	font-size: 1.25rem;
@@ -715,8 +822,14 @@ footer span {
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 750px) { 
+footer a {
+	text-decoration: underline;
+}
+
+/* -----------------RWD-------------------------- */
+
+@media screen and (min-width: 769px) {
 	footer div {
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 	}
 }

@@ -1,7 +1,7 @@
 <section  id="<?= ANCRE_CABINET ?>">
 
 
-   <div id="carouselCabinet" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselCabinet" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
          <div class="carousel-item active">
             <img src="<?= CHEMIN_IMAGES ?>exterieur.webp" class="d-block w-100"  alt="Extérieur du cabinet">
@@ -28,8 +28,7 @@
 
 
    
-   <div class="voile"> </div> <!-- Sert à mettre un plan gris d'opacité de 20% par dessus le carrousel pour rendre le text plus lisible -->
-  
+   <div class="voile"> </div> <!-- Sert à mettre un plan gris d'opacité de 20% par dessus le carrousel pour rendre le text plus lisible -->   
  
     <article>
         <h2>Le cabinet </h2>

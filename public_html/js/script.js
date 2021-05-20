@@ -1,14 +1,13 @@
-let bttnPourquoiTop = document.getElementById("pourquoiTopBttn");
-let bttnPourQuiTop = document.getElementById("pourQuiTopBttn");
-let bttnContact = document.getElementById("contactTopBttn");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".menu");
 
-function topFonction() {
-	document.body.scrollTop = 0;
-   document.documentElement.scrollTop = 0;
+
+const nourrisson = document.getElementById("nourrisson");
+
+function mobileMenu() {
+   hamburger.classList.toggle("active");
+   navMenu.classList.toggle("active");
 }
-
-
-
 function changeTexte(id1,id2) {
    d1=document.getElementById(id1);
    d2=document.getElementById(id2);
@@ -21,4 +20,21 @@ function changeTexte(id1,id2) {
          d2.style.display = "none";
       } 
 };
+
+
+function topFonction() {
+	document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+}
+
+hamburger.addEventListener("click", mobileMenu);
+
+
+
+
+
+
+
+
+
 

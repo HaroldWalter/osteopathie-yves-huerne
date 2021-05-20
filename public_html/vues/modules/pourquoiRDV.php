@@ -1,7 +1,7 @@
 <section id="<?= ANCRE_POURQUOI_CONSULTER ?>">
    <img class="image-fond" src="./images/logo_seul.webp" alt="">
 
-
+<div class="pourquoi-contenu">
    <h2 class="titrePetitEcran">Pourquoi prendre <br> RDV</h2>
    <div class="row">
       <div class="col-xl-4 colonne-conteneur">
@@ -65,4 +65,5 @@
       </div>
    </div>
    <button onclick="topFonction()" id="pourquoiTopBttn" title="Retour en haut de la page"class='topBttn'><img src="<?= CHEMIN_IMAGES ?>fleche_haut.webp" alt="Flèche vers haut de la page"></button>
+   </div>
 </section>
