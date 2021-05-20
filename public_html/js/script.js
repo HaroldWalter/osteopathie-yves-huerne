@@ -1,13 +1,17 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".menu");
-
-
-const nourrisson = document.getElementById("nourrisson");
+const navLink = document.querySelectorAll(".menu-link");
 
 function mobileMenu() {
    hamburger.classList.toggle("active");
    navMenu.classList.toggle("active");
 }
+
+function closeMenu() {
+   hamburger.classList.remove("active");
+   navMenu.classList.remove("active");
+}
+
 function changeTexte(id1,id2) {
    d1=document.getElementById(id1);
    d2=document.getElementById(id2);
@@ -28,6 +32,9 @@ function topFonction() {
 }
 
 hamburger.addEventListener("click", mobileMenu);
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
 
 
 
