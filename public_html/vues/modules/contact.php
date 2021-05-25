@@ -24,7 +24,7 @@
          </p>
       </div>
 
-      <button class="bttnRDV" type="button" onclick="pageRDV()">Prendre RDV</button>
+      <button id="bttnContactRDV" class="bttnRDV" type="button">Prendre RDV</button>
    </article>
    <button onclick="topFonction()" id="contactTopBttn" title="Retour en haut de la page" class='topBttn'><img src="<?= CHEMIN_IMAGES ?>fleche_haut.webp" alt="Flèche vers haut de la page"></button>
 </section>

@@ -27,7 +27,7 @@
                <?php endforeach; ?>
 
                <li>
-                  <button class="bttnRDV nav-item" type="button" onclick="pageRDV()">Prendre RDV</button>
+                  <button id="bttnMenuRDV" class="bttnRDV nav-item" type="button" >Prendre RDV</button>
                </li>
             </ul>
             
