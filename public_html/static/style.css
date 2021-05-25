@@ -70,15 +70,14 @@ a {
 @media screen and (min-width: 1441px) {
 	.colonne-conteneur {
 		display: block;
-		}
-	
+	}
+
 	.titrePetitEcran {
 		display: none;
 	}
 
 	.titreGrandEcran {
 		display: block;
-		
 	}
 }
 
@@ -104,11 +103,12 @@ a {
 /* -------------Boutton de retour en haut de page------------------- */
 
 .topBttn {
-	position: absolute;
+	/* position: -webkit-sticky; */
+	position: fixed;
 	top: 50%;
-	transform: translateY(-50%);
-	right: 0;
-	z-index: 99;
+	right: 5px;
+
+	z-index: 4;
 
 	border: none;
 	background-color: transparent;
@@ -118,14 +118,27 @@ a {
 	margin: 0;
 }
 
-.topBttn:hover,
-.topBttn:focus {
-	background-color: #3d64ad;
-}
 
 .topBttn img {
 	width: 35px;
 	height: auto;
+}
+
+#pourQuiTopBttn {
+	display: none;
+}
+
+@media screen and (min-width: 1025px) {
+	.topBttn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 5px;
+	}
+
+	#pourQuiTopBttn {
+		display: block;
+	}
 }
 
 /* =======================HEADER======================= */
@@ -184,7 +197,6 @@ nav .bttnRDV {
 /* -----------------RWD-------------------------- */
 
 @media only screen and (max-width: 1024px) {
-
 	nav {
 		justify-content: space-between;
 	}
@@ -215,22 +227,22 @@ nav .bttnRDV {
 	.hamburger {
 		display: block;
 		cursor: pointer;
-		}
+	}
 
-		.hamburger.active .barre:nth-child(2) {
-			opacity: 0;
-	  }
- 
-	  .hamburger.active .barre:nth-child(1) {
-			transform: translateY(8px) rotate(45deg);
-	  }
- 
-	  .hamburger.active .barre:nth-child(3) {
-			transform: translateY(-8px) rotate(-45deg);
-	  }
+	.hamburger.active .barre:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburger.active .barre:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .barre:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
 }
 
-@media screen and (min-width:1441px) {
+@media screen and (min-width: 1441px) {
 	header {
 		height: 100px;
 	}
@@ -291,10 +303,10 @@ nav .bttnRDV {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 30%;
-	left: -10%;
-	/* transform: translateX(-50%); */
+	left: 20%;
+	z-index: -1;
 
-	width: 100%;
+	width: 60%;
 
 	opacity: 0.2;
 }
@@ -747,8 +759,6 @@ nav .bttnRDV {
 	font-size: 2.5rem;
 	font-weight: bold;
 	color: #3d64ad;
-	
-	
 }
 
 #contact h3,
@@ -785,7 +795,6 @@ nav .bttnRDV {
 		height: 1080px;
 	}
 }
-
 
 /* =====================Mentions légales================= */
 #mentions-legales {

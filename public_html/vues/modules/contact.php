@@ -12,7 +12,7 @@
       <div>
          <figure><img src="./images/telephone.webp" alt="téléphone"></figure>
          <p class='telephone'>
-            <span>Tel : 06.79.2.58.40 </span>
+            <span>Tel : 06.79.22.58.40 </span>
             <br>
             <i> (possibilité de communiquer via WhatApp)</i>
          </p>
@@ -24,7 +24,7 @@
          </p>
       </div>
 
-      <button class="bttnRDV" type="button" onclick="window.location.href='https://us.cloudamo.com/index.php/apps/appointments/pub/O6%2B%2Bil3TjvYevRxivClmyH_nfIdUuu8ijwfgbw%3D%3D/form';">Prendre RDV</button>
+      <button class="bttnRDV" type="button" onclick="pageRDV()">Prendre RDV</button>
    </article>
    <button onclick="topFonction()" id="contactTopBttn" title="Retour en haut de la page" class='topBttn'><img src="<?= CHEMIN_IMAGES ?>fleche_haut.webp" alt="Flèche vers haut de la page"></button>
 </section>
