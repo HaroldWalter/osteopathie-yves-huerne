@@ -17,8 +17,8 @@
             <h3>
                Système <br> génito-urinaire :
             </h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Les infections urinaires chroniques, certaines formes d'incontinence, ou encore certains troubles sexuels comme la dyspareunie peuvent être soignés en ostéopathie. Chez la femme, des symptomes gynécologiques tels que des règles irrègulières ou douloureuses peuvent être prise en charge. Certaines formes de difficultés à concevoir un enfant peuvent également être accompagnées par l'ostéopathe. La femme enceinte pourra être également être suivie pour atténuer les symptômes liées à la grossesse ou préparer l'accouchement.</p>
+           
             <figure><img src="<?= CHEMIN_IMAGES ?>reins.webp" alt="schéma des reins et de la vessie"></figure>
          </article>
       </div>
@@ -31,8 +31,8 @@
             <h3>
                Système nerveux :
             </h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+            <p>Certains troubles et symptômes qui affectent le système nerveux oeuvent bénéficier de l'ostéopathie: maux detête, vertiges, sciatiques, cruralgies, névralgies cervico-brachiales, névragies d'Arnold, etc...</p>
+            <p>Certains états peuvent être aussi pris en charge par un ostéopathe, au bénéfice du patient: troubles du sommeil, fatigue, troubles de l'attention, hyperactivité, anxité, stress, dépression, etc...</p>
             <figure><img src="<?= CHEMIN_IMAGES ?>cerveau.webp" alt="schéma du cerveau"></figure>
          </article>
          <article id="orl">
@@ -40,7 +40,7 @@
                Système <br> Oto-thino-laryngologique <br> (ORL) :
             </h3>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Toux, troubles du canal lacyrmal, peuvent être pris en charge par l'ostéopathie. </p>
             <figure><img src="<?= CHEMIN_IMAGES ?>orl.webp" alt="schéma du système oto-rhino-laryngologique"></figure>
          </article>
       </div>
@@ -50,7 +50,7 @@
             <h3>
                Système digestif :
             </h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
+            <p>Troubles digestifs, aussi bien chez les nourrissons (colique ou régurgitation), que chez les adultes (constipations, diarrhées, ballonnemenys, reflux gastro-oesophagien, nausées, difficultés à digérer, syndrome du côlon irritable, etc.).</p>
             <figure><img src="<?= CHEMIN_IMAGES ?>estomac.webp" alt="schéma de l'estomac"></figure>
          </article>
 
@@ -58,7 +58,7 @@
             <h3>
                Système vasculaire :
             </h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+            <p>Des céphalées ou migranes, des troubles de la circulation tels qu'un mauvais retour veineux, des hémorroides, des œdèmes du membre inférieur ou encore un syndrome des «jambes sans repos» peuvents être atténués par une prise en charge ostéopathique.</p>
 
             <figure><img src="<?= CHEMIN_IMAGES ?>coeur.webp" alt="un coeur"></figure>
          </article>

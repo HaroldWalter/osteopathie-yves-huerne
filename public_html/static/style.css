@@ -260,12 +260,12 @@ nav .bttnRDV {
 }
 
 #cabinet .voile {
-	/* Sert à mettre un plan gris d'opacité de 20% par dessus le carrousel pour rendre le text plus lisible */
+	/* Sert à mettre un plan blanc d'opacité de 20% par dessus le carrousel pour rendre le text plus lisible */
 	position: absolute;
 	top: 0;
 	width: 100%;
 	height: 1080px;
-	background-color: rgba(128, 128, 128, 0.4);
+	background-color: rgba(128, 128, 128, 0.3);
 }
 
 #cabinet article {
@@ -275,12 +275,14 @@ nav .bttnRDV {
 }
 
 #cabinet article h2 {
-	margin: 5% auto 20% auto;
+	margin: 5% auto 30% auto;
 }
 
 #cabinet article p {
 	color: black;
 	text-shadow: -3px -3px 8px white, 3px 3px 8px white;
+	font-size: 1.75rem;
+	text-align: center;
 }
 /* -------------------Caroussel------------ */
 .carousel {
@@ -342,7 +344,7 @@ nav .bttnRDV {
 }
 
 #pourquoi-consulter article p {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	color: black;
 	word-wrap: normal;
 	max-width: 80vw;
@@ -371,7 +373,7 @@ nav .bttnRDV {
 #nerveux {
 	height: 470px;
 	width: 470px;
-	padding: 35px;
+	padding: 45px;
 }
 
 #genito {
@@ -383,7 +385,7 @@ nav .bttnRDV {
 #orl {
 	height: 380px;
 	width: 380px;
-	padding: 10px;
+	padding: 20px;
 }
 
 #digestif {
@@ -395,7 +397,7 @@ nav .bttnRDV {
 #vasculaire {
 	height: 450px;
 	width: 450px;
-	padding: 20px;
+	padding: 25px;
 }
 
 /* -----------------RWD-------------------------- */
@@ -509,9 +511,10 @@ nav .bttnRDV {
 }
 
 .pourqui-contenu p {
-	color: #f57200;
+	color: #f28d32;
 	text-shadow: 2px 2px 2px white;
 
+	font-size: 2rem;
 	font-weight: 400;
 	word-wrap: normal;
 

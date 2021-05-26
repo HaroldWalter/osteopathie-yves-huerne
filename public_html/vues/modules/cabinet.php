@@ -1,13 +1,13 @@
-<section  id="<?= ANCRE_CABINET ?>">
+<section id="<?= ANCRE_CABINET ?>">
 
 
-  <div id="carouselCabinet" class="carousel slide" data-bs-ride="carousel">
+   <div id="carouselCabinet" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
          <div class="carousel-item active">
-            <img src="<?= CHEMIN_IMAGES ?>exterieur.webp" class="d-block w-100"  alt="Extérieur du cabinet">
+            <img src="<?= CHEMIN_IMAGES ?>exterieur.webp" class="d-block w-100" alt="Extérieur du cabinet">
          </div>
          <div class="carousel-item">
-            <img src="<?= CHEMIN_IMAGES ?>acces_cabinet.webp" class="d-block w-100"  alt="Accès du cabinet">
+            <img src="<?= CHEMIN_IMAGES ?>acces_cabinet.webp" class="d-block w-100" alt="Accès du cabinet">
          </div>
          <div class="carousel-item">
             <img src="<?= CHEMIN_IMAGES ?>salle_dattente.webp" class="d-block  w-100" alt="Salle d'attente">
@@ -27,18 +27,19 @@
    </div>
 
 
-   
-   <div class="voile"> </div> <!-- Sert à mettre un plan gris d'opacité de 20% par dessus le carrousel pour rendre le text plus lisible -->   
- 
-    <article>
-        <h2>Le cabinet </h2>
-  
-   <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita eum! Culpa hic accusantium consequuntur velit facere similique obcaecati laudantium ipsum laboriosam recusandae nesciunt assumenda aspernatur numquam dolor iure labore unde voluptatibus, beatae eum omnis. Praesentium accusantium explicabo, enim consequatur id soluta perferendis magni. Quia unde esse cum asperiores sapiente obcaecati est numquam dolores eligendi error repellendus optio illo dolorum libero beatae nam sed reiciendis, debitis in! Minus, ab corporis.
-   </p>
-   <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga in, libero quibusdam, accusantium ratione nihil sapiente velit ullam optio dolor et voluptas provident tenetur autem ab odio nam debitis, non aut beatae! Odit ipsam repudiandae eius quos aspernatur error nobis ratione quas, nemo sed obcaecati provident recusandae asperiores ad sunt adipisci, quis qui atque vero dolorem, deserunt pariatur. Voluptatem aut beatae vel pariatur esse, facere autem facilis voluptatibus deserunt.
-   </p>
+
+   <div class="voile"> </div> <!-- Sert à mettre un plan gris d'opacité de 20% par dessus le carrousel pour rendre le text plus lisible -->
+
+   <article>
+      <h2>Le cabinet </h2>
+
+      <p>
+         Formé à l'ISO de lyon, et exercant sur Mions depuis 2011,
+         votre ostéopathe sera votre interlocuteur concernant vos douleurs et gênes quotidiennes à tout âge, aussi bien traumatiques que chroniques, et il sera un partenaire de votre santé tout au long de votre vie.
+      </p>
+      <p>
+      (Un suivi ostéopathique doit toujours être complémentaire d'un suivi médical et ne doit en aucun cas s'y substituer exclusivement.)
+      </p>
    </article>
-  
+
 </section>

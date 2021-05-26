@@ -14,8 +14,7 @@
                   </h3>
                </div>
                <div id="nourrissonTexte">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+                  <p>Coliques, troubles du sommeil...</p>
                </div>
             </div>
          </article>
@@ -28,8 +27,7 @@
                   </h3>
                </div>
                <div id="enfantsTexte">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <p>Douleurs de croissances, troubles de la posture</p>
                </div>
             </div>
          </article>
@@ -63,8 +61,7 @@
                   </h3>
                </div>
                <div id="seniorsTexte">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+                  <p>Douleurs chroniques, arthrose....</p>
                </div>
             </div>
          </article>
@@ -80,8 +77,7 @@
                   </h3>
                </div>
                <div id="enceintesTexte">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+                  <p> Sciatiques,lombalgies..</p>
                </div>
             </div>
          </article>
@@ -95,8 +91,7 @@
                   </h3>
                </div>
                <div id="sportifsTexte">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+                  <p>Suivi et prevention de blessure, reathletisation...</p>
                </div>
          </article>
       </div>
