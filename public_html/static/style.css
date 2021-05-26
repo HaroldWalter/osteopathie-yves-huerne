@@ -344,7 +344,7 @@ nav .bttnRDV {
 }
 
 #pourquoi-consulter article p {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	color: black;
 	word-wrap: normal;
 	max-width: 80vw;
@@ -373,7 +373,7 @@ nav .bttnRDV {
 #nerveux {
 	height: 470px;
 	width: 470px;
-	padding: 45px;
+	padding: 40px;
 }
 
 #genito {

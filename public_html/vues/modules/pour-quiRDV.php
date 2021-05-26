@@ -46,8 +46,8 @@
                   </h3>
                </div>
                <div id="adultesTexte">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi totam quae accusamus magnam facilis aut facere vitae enim temporibus ipsa.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur temporibus iste inventore corrupti harum est quod architecto esse adipisci!</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur </p>
+                  
                </div>
             </div>
          </article>
