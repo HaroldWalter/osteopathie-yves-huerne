@@ -20,7 +20,7 @@
       <div>
 
          <figure><img src="./images/enveloppe.webp" alt="courriel"></figure>
-         <p> <em>mail: yves.huerne@gmail.com</em>
+         <p > <em>mail: yves.huerne<wbr>@gmail.com</em>
          </p>
       </div>
 

@@ -783,8 +783,8 @@ nav .bttnRDV {
 }
 
 #contact figure img {
-	height: 100%;
-	width: 100%;
+	height: 40px;
+	width: 40px;
 }
 
 .telephone {
@@ -794,6 +794,10 @@ nav .bttnRDV {
 .telephone span {
 	font-size: 2.5rem;
 	font-weight: 600;
+}
+
+.mail {
+	word-break: normal;
 }
 
 /* -----------------RWD-------------------------- */
