@@ -46,7 +46,7 @@
                   </h3>
                </div>
                <div id="adultesTexte">
-                  <p>Lorem ipsum dolor, sit amet consectetur </p>
+                  <p>Pour toutes douleurs ou gènes ponctuelles ou quotidiennes ne presentant pas de contre indications medicales. </p>
                   
                </div>
             </div>

@@ -8,7 +8,6 @@ define("ATTR_ITEM_MENU_ANCRE", "ancre");
 define("MENU_PRESENTATION", "presentation");
 define("NAV_VERS_PAGES", "navVersPages");
 define("NAV_VERS_ACCUEIL", "navVersAccueil");
-define("NAV_VERS_RDV", "navVersRDV");
 define("NAV_VERS_MENTIONS_LEGALES", "navVersMentionsLegales");
 
 
@@ -45,10 +44,7 @@ define("MENUS", [
          ATTR_ITEM_MENU_PAGE => PAGE_ACCUEIL,
       ],
 
-      NAV_VERS_RDV => [
-         ATTR_ITEM_MENU_LIBELLE => "Prise de RDV en Ligne",
-         ATTR_ITEM_MENU_PAGE => PAGE_PRISE_RDV,
-      ],
+     
       NAV_VERS_MENTIONS_LEGALES => [
          ATTR_ITEM_MENU_LIBELLE => "Mentions légales",
          ATTR_ITEM_MENU_PAGE => PAGE_MENTIONS_LEGALES,

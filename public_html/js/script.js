@@ -7,12 +7,18 @@ const boutonContactRDV = document.getElementById("bttnContactRDV");
 const boutonPourQuoiTop = document.getElementById("pourquoiTopBttn");
 const boutonPourQuiTop = document.getElementById("pourQuiTopBttn");
 
-const nourrisson = document.getElementById("nourrisson");
-const enfants = document.getElementById("enfants");
-const adultes = document.getElementById("adultes");
-const seniors = document.getElementById("seniors");
-const enceintes = document.getElementById("enceintes");
-const sportifs = document.getElementById("sportifs");
+
+
+
+/* Fonction faisant marcher le bouton pour aller sur le service de rdv */
+function pageRDV() {
+	let choix = confirm(
+		"Vous allez quitter cette page pour rejoindre la page professionnelle Facebook du cabinet. \n\nVoulez-vous continuer?"
+	);
+	if (choix == true)
+		window.location.href =
+			"https://www.facebook.com/Osteopathemions";
+}
 
 /* Fonctions pour faire s'afficher ou se fermer le menu hamburger */
 
@@ -45,23 +51,7 @@ function topFonction() {
 	document.documentElement.scrollTop = 0;
 }
 
-/* Fonction faisant marcher le bouton pour aller sur le service de rdv */
-function pageRDV() {
-	let choix = confirm(
-		"Vous allez quitter cette page pour rejoindre \nle service de prise de rendez-vous. \nVoulez-vous continuer?"
-	);
-	if (choix == true)
-		window.location.href =
-			"https://us.cloudamo.com/index.php/apps/appointments/pub/O6%2B%2Bil3TjvYevRxivClmyH_nfIdUuu8ijwfgbw%3D%3D/form";
-}
 
-/* initialisation des articles de la section Pour qui prendre RDV afin d'être sur que le contenu de la bulle change au premier clic */
-changeTexte("nourrissonVitrine", "nourrissonTexte");
-changeTexte("enfantsVitrine", "enfantsTexte");
-changeTexte("adultesVitrine", "adultesTexte");
-changeTexte("seniorsVitrine", "seniorsTexte");
-changeTexte("enceintesVitrine", "enceintesTexte");
-changeTexte("sportifsVitrine", "sportifsTexte");
 
 /* Écoute des événements pour le menu hamburger */
 hamburger.addEventListener("click", mobileMenu);
@@ -86,88 +76,3 @@ boutonContactRDV.addEventListener("click", pageRDV);
 boutonPourQuoiTop.addEventListener("click", topFonction);
 boutonPourQuiTop.addEventListener("click",topFonction);
 
-/* Écoute des évènements click et appuie sur entrée sur les articles de la section Pour Qui Prendre RDV */
-
-nourrisson.addEventListener("click", function (event) {
-	changeTexte("nourrissonVitrine", "nourrissonTexte");
-});
-
-nourrisson.addEventListener("keyup", function (event) {
-	// Number 13 is the "Enter" key on the keyboard
-	if (event.keyCode === 13) {
-		// Cancel the default action, if needed
-		event.preventDefault();
-		// Trigger the button element with a click
-		document.getElementById("nourrisson").click();
-	}
-});
-
-enfants.addEventListener("click", function (event) {
-	changeTexte("enfantsVitrine", "enfantsTexte");
-});
-
-enfants.addEventListener("keyup", function (event) {
-	// Number 13 is the "Enter" key on the keyboard
-	if (event.keyCode === 13) {
-		// Cancel the default action, if needed
-		event.preventDefault();
-		// Trigger the button element with a click
-		document.getElementById("enfants").click();
-	}
-});
-
-adultes.addEventListener("click", function (event) {
-	changeTexte("adultesVitrine", "adultesTexte");
-});
-
-adultes.addEventListener("keyup", function (event) {
-	// Number 13 is the "Enter" key on the keyboard
-	if (event.keyCode === 13) {
-		// Cancel the default action, if needed
-		event.preventDefault();
-		// Trigger the button element with a click
-		document.getElementById("adultes").click();
-	}
-});
-
-seniors.addEventListener("click", function (event) {
-	changeTexte("seniorsVitrine", "seniorsTexte");
-});
-
-seniors.addEventListener("keyup", function (event) {
-	// Number 13 is the "Enter" key on the keyboard
-	if (event.keyCode === 13) {
-		// Cancel the default action, if needed
-		event.preventDefault();
-		// Trigger the button element with a click
-		document.getElementById("seniors").click();
-	}
-});
-
-enceintes.addEventListener("click", function (event) {
-	changeTexte("enceintesVitrine", "enceintesTexte");
-});
-
-enceintes.addEventListener("keyup", function (event) {
-	// Number 13 is the "Enter" key on the keyboard
-	if (event.keyCode === 13) {
-		// Cancel the default action, if needed
-		event.preventDefault();
-		// Trigger the button element with a click
-		document.getElementById("enceintes").click();
-	}
-});
-
-sportifs.addEventListener("click", function (event) {
-	changeTexte("sportifsVitrine", "sportifsTexte");
-});
-
-sportifs.addEventListener("keyup", function (event) {
-	// Number 13 is the "Enter" key on the keyboard
-	if (event.keyCode === 13) {
-		// Cancel the default action, if needed
-		event.preventDefault();
-		// Trigger the button element with a click
-		document.getElementById("sportifs").click();
-	}
-});

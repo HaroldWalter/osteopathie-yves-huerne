@@ -13,7 +13,7 @@ body {
 
 header,
 footer {
-	width: 100vw;
+	width: 100%;
 	max-width: 1920px;
 	margin: 0 auto;
 }
@@ -24,7 +24,7 @@ header nav {
 }
 
 main {
-	width: 100vw;
+	width: 100%;
 	max-width: 1920px;
 	margin: 0 auto;
 }
@@ -129,7 +129,7 @@ a {
 	height: auto;
 }
 
-#pourQuiTopBttn, #bttnContactRDV {
+#pourQuiTopBttn, #contactTopBttn {
 	display: none;
 }
 
@@ -279,8 +279,9 @@ nav .bttnRDV {
 }
 
 #cabinet article p {
-	color: black;
-	text-shadow: -3px -3px 8px white, 3px 3px 8px white;
+	color: white;
+	font-weight: 600;
+	/* text-shadow: -3px -3px 8px white, 3px 3px 8px white; */
 	font-size: 1.75rem;
 	text-align: center;
 }
@@ -751,7 +752,7 @@ nav .bttnRDV {
 	margin: 80px 20%;
 	text-align: center;
 	font-size: 2.5rem;
-}
+	}
 
 #contact article div,
 #contact h3 {
@@ -796,13 +797,15 @@ nav .bttnRDV {
 	font-weight: 600;
 }
 
-.mail {
-	word-break: normal;
+#contact .bttnRDV {
+	margin-left: auto;
+	margin-right: auto;
 }
+
 
 /* -----------------RWD-------------------------- */
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px) {
 	#contact {
 		height: 1080px;
 	}
@@ -810,23 +813,27 @@ nav .bttnRDV {
 
 /* =====================Mentions légales================= */
 #mentions-legales {
-	margin: 0 20%;
+	margin: 0;
 	font-size: 1.25rem;
+	width: 100vw;
 }
-
 #mentions-legales section {
-	margin-top: 30px;
+	margin: 30px 0 0 ;
+	padding: 0 15% 0;
+	
 }
 #mentions-legales h3 {
 	color: #3d64ad;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 3rem;
+	width: 100%;
 }
 
 #mentions-legales h4 {
 	font-weight: 600;
 	font-size: 1.5rem;
+	width: 100%;
 }
 
 #mentions-legales span {
