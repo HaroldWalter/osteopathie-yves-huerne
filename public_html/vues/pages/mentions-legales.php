@@ -4,13 +4,13 @@
 <section>
    <h3>Informa&#173;tions légales :</h3>
    <h4>Dénomination sociale :</h4>
-   <p>Yves <span>Huernes</span>, profession libérale</p>
+   <p>Yves <span>Huerne</span>, profession libérale</p>
    <h4><span>Siret</span> :</h4>
    <p>53250136800031</p>
    <h4>Numéro <span>Adeli</span> :</h4>
    <p>690-004-734</p>
    <h4>Directeur de la publication du site :</h4>
-   <p>Yves <span>Huernes</span></p>
+   <p>Yves <span>Huerne</span></p>
    <h4>Réalisation du site:</h4>
    <p>Roxanne <span>Pettex</span> (Webdesign) - Harold <span>Walter</span> (Dévelopement) </p>
    <h4>Hébergement : </h4>
