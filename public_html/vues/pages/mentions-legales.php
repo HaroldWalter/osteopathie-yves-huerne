@@ -24,7 +24,8 @@
 <section>
    <h3>Données personnel&#173;les : </h3>
    <p>L’exploitant du site web déclare avoir respecté les obligations issues de la loi informatique, fichiers et libertés du 6 janvier 1978 modifiée et notamment offrir aux utilisateurs un droit de s’opposer à ce que les informations qu’il détient soient communiquées à des tiers ainsi qu’un droit d’accès et de rectification portant sur les données les concernant.</p>
-   <p>Le service de prise de rendez-vous lié à ce site n'enregistrent pas d'autres informations personnelles que celles données à la prise de rendez-vous. C'est-à-dire  le nom, le prénom, l'adresse e-mail et le numéro de téléphone. Ce site n'enregistre pas d'autres données.</p>
+   <p>Le site ci-présent ne collecte pas de données sur les visiteurs et n'utilise pas de cookies, cependant le site vers lequel le bouton "Prendre RDV" mène, c'est-à-dire Facebook, utilise des cookies et collecte des données.</p>
+   <p> Quant à l'exploitant du site présent, lui, ne conserve lui que les données qui lui ont été données lors de la prise de rendez-vous via les différents moyens mis à disposition. Celles-ci ne lui servent uniquement à la gestion des rendez-vous et au suivi du patient. </p>
 </section>
 <section>
    <p><a href="./?<?= PARAM_URL_PAGE ?>=<?= MENUS[NAV_VERS_PAGES][NAV_VERS_ACCUEIL][ATTR_ITEM_MENU_PAGE] ?>">Retour au site </a></p>
