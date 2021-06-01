@@ -14,7 +14,7 @@
    <h4>Réalisation du site:</h4>
    <p>Roxanne <span>Pettex</span> (Webdesign) - Harold <span>Walter</span> (Dévelopement) </p>
    <h4>Hébergement : </h4>
-   <p></p>
+   <p><span>SARL OVH</span> -  2 rue Kellermann - 59100 <span>Roubaix</span> - <span>France</span></p>
 </section>
 <section>
    <h3>Propriété intellec&#173;tuelle :</h3>
