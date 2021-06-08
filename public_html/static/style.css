@@ -141,7 +141,7 @@ a {
 		right: 5px;
 	}
 
-	#pourQuiTopBttn, #bttnContactRDV {
+	#pourQuiTopBttn, #contactTopBttn {
 		display: block;
 	}
 }
@@ -748,8 +748,12 @@ nav .bttnRDV {
 	width: 100%;
 	height: 100%;
 }
+
+#contact h2 {
+	margin: 80px 20% 20px;
+}
 #contact article {
-	margin: 80px 20%;
+	margin: 20px 20% 80px;
 	text-align: center;
 	font-size: 2.5rem;
 	}
@@ -877,4 +881,53 @@ footer a {
 	footer div {
 		flex-wrap: nowrap;
 	}
+}
+
+/* =================Page Erreur 404 ============== */
+.erreurMain {
+	padding: 0;
+	margin: 0;
+	
+}
+
+.erreurTitre, .erreurTexte, .erreurLien {
+	width: 100%;
+	
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.erreurTitre, .erreurLien {
+	background-color: #3d64ad;
+	color: white;
+	height: 20vh;
+	
+}
+
+.erreurTitre {
+	font-weight: 900;
+	font-size: 5rem;
+}
+.erreurTexte {
+	color: #3d64ad;
+	font-size: 3rem;
+
+	height: 60vh;
+
+}
+
+.erreurLien {
+	background-color: #3d64ad;
+	font-size: 2rem;
+	text-decoration: underline;
+}
+
+.erreurLien a {
+	color: white;
+}
+
+.erreurLien a:hover, .erreurLien a:focus {
+	color: #f28d32;
 }

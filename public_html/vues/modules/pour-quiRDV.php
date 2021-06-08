@@ -47,7 +47,7 @@
                </div>
                <div id="adultesTexte">
                   <p>Pour toutes douleurs ou gènes ponctuelles ou quotidiennes ne presentant pas de contre indications medicales. </p>
-                  
+
                </div>
             </div>
          </article>
@@ -93,6 +93,7 @@
                <div id="sportifsTexte">
                   <p>Suivi et prevention de blessure, reathletisation...</p>
                </div>
+            </div>
          </article>
       </div>
    </div>
